@@ -1,1 +1,169 @@
-/* You can add global styles to this file, and also import other style files */
+.content {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#eef899, #099d99);
+}
+
+.title {
+    font-family: "Playfair Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.btn.btn-outline-primary {
+    color: white;
+    border-color: white;
+
+    &:hover {
+        background-color: #099d99;
+    }
+}
+
+.game {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+
+    .line {
+        display: flex;
+        border-bottom: 1px solid #fff;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .field {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            height: 130px;
+            font-size: 40px;
+            margin: 1px;
+            border-right: 1px solid #fff;
+            cursor: pointer;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+
+    .marcacao {
+        position: absolute;
+        background: #000;
+        display: none;
+
+        &.show {
+            display: block;
+        }
+
+        &.marcacao1 {
+            width: 396px;
+            height: 1px;
+            top: 65px;
+            left: 0;
+        }
+
+        &.marcacao2 {
+            width: 396px;
+            height: 1px;
+            top: 195px;
+            left: 0;
+        }
+
+        &.marcacao3 {
+            width: 396px;
+            height: 1px;
+            top: 325px;
+            left: 0;
+        }
+
+        &.marcacao4 {
+            width: 1px;
+            height: 396px;
+            top: 0;
+            left: 65px;
+        }
+
+        &.marcacao5 {
+            width: 1px;
+            height: 396px;
+            top: 0;
+            left: 195px;
+        }
+
+        &.marcacao6 {
+            width: 1px;
+            height: 396px;
+            top: 0;
+            left: 325px;
+        }
+
+        &.marcacao7 {
+            width: 550px;
+            height: 1px;
+            top: 197px;
+            left: -80px;
+            transform: rotate(45deg);
+        }
+
+        &.marcacao8 {
+            width: 550px;
+            height: 1px;
+            top: 200px;
+            left: -80px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.results {
+    color:  white;
+}
+
+.game-modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+    background: rgba(0, 0, 0, 0.6);
+
+    .game-modal-container {
+        text-align: center;
+        width: 600px;
+        margin-top: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 10px;
+        background: rgba(245, 245, 245, 0.9);
+        box-shadow: rgba(99, 99, 99, 0.2) 0 2px 18px 20px;
+
+        .btn.btn-primary {
+            color: white;
+            border-color: white;
+            background-color: #099d99;
+
+            &:hover {
+                color: #099d99;
+                border-color: #099d99;
+                background-color: #fff;
+            }
+        }
+    }
+}

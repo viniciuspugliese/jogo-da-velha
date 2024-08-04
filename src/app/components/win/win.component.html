@@ -1,0 +1,13 @@
+@if (game.finished === 'win') {
+    <div class="game-modal">
+        <div class="game-modal-container animate__animated animate__zoomIn">
+            <h1 class="title">Jogador {{ game.user }} venceu!</h1>
+
+            <div class="mt-5">
+                <button (click)="new()" class="btn btn-primary btn-lg">
+                    Novo jogo
+                </button>
+            </div>
+        </div>
+    </div>
+}

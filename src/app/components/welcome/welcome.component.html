@@ -1,0 +1,18 @@
+@if (!game.started) {
+    <div class="game-modal">
+        <div class="game-modal-container animate__animated animate__bounceInDown">
+            <h1 class="title">Bem vindo ao jogo da velha</h1>
+            <h5 class="title mt-3">Clique no botão abaixo para iniciar o jogo</h5>
+
+            <div class="mt-5">
+                <button (click)="startWithFriend()" class="btn btn-primary btn-lg mx-2">
+                    Jogar contra um amigo
+                </button>
+
+                <button disabled class="btn btn-primary btn-lg mx-2">
+                    Jogar contra a máquina (Em breve)
+                </button>
+            </div>
+        </div>
+    </div>
+}
